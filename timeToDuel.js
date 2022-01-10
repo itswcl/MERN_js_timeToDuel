@@ -38,15 +38,15 @@ class Effect extends Card {
 
 
 const redBeltNinja = new Unit('Red Belt Ninja', 3, 3, 4);
-console.log(redBeltNinja);
-const hardAlgo = new Effect('Hard Algorithm', 2, 'res', 3);
-
 const blackBeltNinja = new Unit('Black Belt Ninja', 4, 5, 4);
-console.log(blackBeltNinja);
+const hardAlgo = new Effect('Hard Algorithm', 2, 'res', 3);
 const unhandledPromiseRejection = new Effect('Unhandled Promise Rejection', 1, 'res', -2);
-unhandledPromiseRejection.play(redBeltNinja);
-
 const pairProgramming = new Effect('Pair Programming', 3, 'power', 2);
+
+console.log(redBeltNinja);
+console.log(blackBeltNinja);
+
+unhandledPromiseRejection.play(redBeltNinja);
 pairProgramming.play(redBeltNinja)
 
 redBeltNinja.attack(blackBeltNinja);
